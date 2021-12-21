@@ -4,40 +4,40 @@
          "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
          "context_set": ""
         },
-        {"tag": "goodbye",
+        {"tag": "bye",
          "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
+         "context_set": ""
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context_set": ""
         },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        {"tag": "plot_chart",
+         "patterns": ["I want you to plot a stock chart price?", "Please plot a chart", "Plot a chart" ],
+         "responses": ["Plotting chart","Plotting your chart"],
+         "context_set": ""
         },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        {"tag": "add_portfolio",
+         "patterns": ["Add a stock to my portfolio", "Add a stock", "Add a stock to my list" ],
+         "responses": ["Adding stock", "Adding your stock"],
+         "context_set": ""
         },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        {"tag": "remove_portfolio",
+         "patterns": ["Remove a stock to from portfolio", "Remove a stock", "ARemove a stock from my list" ],
+         "responses": ["Removing stock", "Removing your stock"],
+         "context_set": ""
         },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        {"tag": "portfolio_worth",
+         "patterns": ["How much is my portfolio worth?", "What is the worth of my portfolio?", "My portfolio's worth?"],
+         "responses": ["Portfolio Worth", "Your portfolio worth"],
+         "context_set": ""
         },
-        {"tag": "rental",
-         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-         "responses": ["Are you looking to rent today or later this week?"],
-         "context_set": "rentalday"
-        },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
+        {"tag": "portfolio_gains",
+         "patterns": ["How is my portfolio performing?", "How are my gains?", "Do I have gains?" ],
+         "responses": ["Portfolio Gains"],
+         "context_set": ""
         }
    ]
 }
-
